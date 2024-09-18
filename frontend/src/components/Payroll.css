@@ -1,0 +1,247 @@
+/* General container styling */
+.data-container {
+  margin: 20px;
+  padding: 10px;
+}
+
+.header-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.payroll-table th, 
+.payroll-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.payroll-table th {
+  background-color: #f2f2f2;
+}
+
+.payroll-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.payroll-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.exit-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: red;
+  float: right;
+  cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 45%;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  text-align: center;
+}
+
+.compute-button, 
+.submit-button, 
+.close-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.compute-button:hover, 
+.submit-button:hover, 
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  background-color: red;
+}
+
+.close-button:hover {
+  background-color: darkred;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .payroll-table {
+    font-size: 12px;
+  }
+
+  .form-group {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+
+  .modal {
+    width: 95%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .payroll-table th, 
+  .payroll-table td {
+    padding: 8px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    margin: 5px;
+    width: 100%;
+  }
+}
+.actions-menu {
+  position: relative;
+}
+
+.dots-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+  color: #555;
+}
+
+.dots-button:hover {
+  color: #000;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button (three dots) */
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change color of dropdown items on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* Entries display dropdown styling */
+.entries-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.entries-display label {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.entries-display select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}

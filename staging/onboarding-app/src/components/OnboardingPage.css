@@ -1,0 +1,35 @@
+/* src/OnboardingPage.css */
+.onboarding-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .onboarding-page {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .onboarding-page {
+        padding: 5px;
+    }
+}
+/* src/OnboardingPage.css */
+.onboarding-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.step-container {
+    width: 100%;
+    max-width: 800px;
+}
